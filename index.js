@@ -69,12 +69,7 @@ function createTimeInEvent(timeInString) {
   function wagesEarnedOnDate(date) {
     return hoursWorkedOnDate.call(this, date) * this.payPerHour;
   }
-  
-//   function allWagesFor(cRecord) {
-//     let wagesArray = cRecord.timeInEvents.map( e => wagesEarnedOnDate(cRecord, e.date ));
-//     return wagesArray.reduce((accumulator, currentValue) => currentValue + accumulator );
-//   }
-  
+    
   function findEmployeeByFirstName(array, name){
     return array.find( e => e.firstName === name);
   }
